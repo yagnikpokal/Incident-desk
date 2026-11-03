@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Incident Desk</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <p class="eyebrow">On-call investigator</p>
+      <h1>Incident Desk</h1>
+    </div>
+    <p class="header-note">The agent can read the platform. It stops before it changes anything.</p>
+  </header>
+  <main>
+    <aside class="col" id="left">
+      <section>
+        <h2>Incidents</h2>
+        <label>Policy
+          <select id="policy">
+            <option value="heuristic" selected>evidence-gap policy — no API key</option>
+            <option value="auto">auto — LLM if a key is set</option>
+            <option value="llm">llm</option>
+          </select>
+        </label>
+        <div id="incidents"></div>
+      </section>
+      <section>
+        <h2>Runs</h2>
+        <div id="runs" class="stack"></div>
+      </section>
+    </aside>
+    <section class="col" id="center">
+      <div id="brief"></div>
+      <ol id="timeline"></ol>
+    </section>
+    <aside class="col" id="right">
+      <div id="meta" aria-live="polite"></div>
+      <div class="controls">
+        <button id="step" type="button">Step</button>
+        <button id="run-gate" type="button">Run until it needs you</button>
+        <button id="pause" type="button">Pause</button>
+        <button id="resume" type="button">Resume</button>
+      </div>
+      <section>
+        <h2>Plan</h2>
+        <ol id="plan"></ol>
+      </section>
+      <section>
+        <h2>Hypotheses</h2>
+        <div id="hypotheses"></div>
+      </section>
+      <section>
+        <h2>Operator</h2>
+        <div id="gate"></div>
+      </section>
+    </aside>
+  </main>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+Engineering Assessment — Candidate Messaging
+Objective: Build an AI agent (Python or TypeScript) that automates a real platform engineering task
+— end-to-end, with a web UI, backend APIs, and local dev setup. Pick one use case (infra
+provisioning, incident triage, deployment orchestration, log analysis, or similar).
+
+What we want to see: genuine agent autonomy — planning, tool use, error recovery, human-in-the-
+loop — not a chatbot wrapper; state/context that survives across steps and is resumable; a UI where
+
+an operator can watch the agent think and intervene; a backend API exposing agent runtime, tools,
+and state.
+Deliverables (public GitHub repo): working app + README (setup, use case rationale, design
+decisions, what’s next); meaningful git history showing how the solution evolved; complete AI
+interaction log/transcript of how you used AI tools to build it.
+Timebox: 2-4 hours. AI usage: required.
+We’re evaluating agent design judgment, context/state handling, and operator UX under time
+constraints — not boilerplate volume.

@@ -15,6 +15,8 @@ python3 -m venv .venv
 
 `make demo` prints both investigations in the terminal.
 
+# Refer to link for requirement fullfill https://github.com/yagnikpokal/Incident-desk/edit/main/RTM.md
+
 ## Use case
 
 The first fifteen minutes of an incident are a search, not a chat. The page names a metric that is not in the catalog. The window on the alert is not a window the metrics store keeps. A caller deployed recently and looks guilty. The runbook is useful only after the logs and the dependency have been read.
